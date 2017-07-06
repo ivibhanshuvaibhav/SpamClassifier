@@ -41,8 +41,8 @@ random.shuffle(combined_list)
 
 testing_size = int(len(combined_list) * 0.7)
 
-testing_data = combined_list[:testing_size]
-training_data = combined_list[testing_size:]
+testing_data = combined_list[testing_size:]
+training_data = combined_list[:testing_size]
 
 print "Combined list size: ", len(combined_list)
 print "Testing data size: ", len(testing_data)
